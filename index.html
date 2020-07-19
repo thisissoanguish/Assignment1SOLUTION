@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lunch Check</title>
+  </head>
+  <body ng-app="LunchCheckApp">
+    <h1>Lunch Checker</h1>
+    <div ng-controller="LunchCheckAppController">
+      <div>
+        <input type="text"
+          ng-model="foods">
+        <button type="button" ng-click="CalcCommas();" style="width:130px;height:30px;">Check if too much</button>
+      </div>
+      <div>{{OutputMessage}}</div>
+    </div>
+  </body>
+</html>
