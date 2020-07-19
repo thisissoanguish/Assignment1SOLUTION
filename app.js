@@ -3,7 +3,10 @@
 
 angular.module('LunchCheckApp', [])
 
-.controller('LunchCheckAppController', function ($scope) {
+.controller('LunchCheckAppController', LunchCheckController);
+
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope){
   $scope.foods = "";
   $scope.OutputMessage = "";
 
@@ -30,8 +33,7 @@ angular.module('LunchCheckApp', [])
     }
     return FinalOutput;
   }
-
-});
+}
 
 
 })();
