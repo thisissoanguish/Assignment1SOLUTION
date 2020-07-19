@@ -24,7 +24,7 @@ function LunchCheckController($scope){
         CommaCount++;
       }
     }
-    if (CommaCount > 3){
+    if (CommaCount > 2){
       FinalOutput = "Too much!";
     }else if (string == ""){
       FinalOutput = "Please enter data first";
